@@ -1,6 +1,8 @@
 <?php
-$pageTitle = "Home";
+$pageTitle = "GabSpotify";
+include 'view-header.php';
 ?>
-    <h1>Final Project</h1>
+    <h1>Welcome to GabSpotify!</h1>
 <?php
+include 'view-footer.php';
 ?>
