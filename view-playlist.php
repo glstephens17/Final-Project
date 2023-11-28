@@ -14,12 +14,12 @@
  while ($playlist = $playlists->fetch_assoc()) {
  ?>
    <tr>
-     <td><?php echo $playlist['playlist_Id']; ?></td>
-     <td><?php echo $playlist['playlist_title']; ?></td>
-     <td><?php echo $playlist['no_of_songs']; ?></td>
+     <td><?php echo $playlist['Playlist_Id']; ?></td>
+     <td><?php echo $playlist['Playlist_Title']; ?></td>
+     <td><?php echo $playlist['No_of_Songs']; ?></td>
      <td>
   <form method="post" action="pets-by-kids.php">
-    <input type="hidden" name="kid" value="<?php echo $playlist['playlist_id'];?>"/>
+    <input type="hidden" name="kid" value="<?php echo $playlist['Playlist_Id'];?>"/>
     <button type="submit" class="btn btn-primary">Songs</button>
   </form>
      </td>     
