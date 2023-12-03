@@ -2,7 +2,7 @@
 function selectPlaylists() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT Playlist_Id,Playlist_Title,No_of_Songs FROM `Playlist`");
+        $stmt = $conn->prepare("SELECT image,Playlist_Id,Playlist_Title,No_of_Songs FROM `Playlist`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
