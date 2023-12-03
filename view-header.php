@@ -23,7 +23,7 @@
           <a class="nav-link" href="songs.php">Top 10 Songs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="kids.php">Trending Albums</a>
+          <a class="nav-link" href="albums.php">Trending Albums</a>
         </li> 
         <li class="nav-item">
           <a class="nav-link" href="parents-with-kids.php">Top 10 Artists</a>
