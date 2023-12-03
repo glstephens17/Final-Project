@@ -20,7 +20,7 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="parents.php">Top 10 Songs</a>
+          <a class="nav-link" href="songs.php">Top 10 Songs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="kids.php">Trending Albums</a>
