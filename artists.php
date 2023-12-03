@@ -4,7 +4,7 @@ require_once("model-artists.php");
 
 $pageTitle = "Artists";
 include "view-header.php";
-$artists = selectArtist();
+$artists = selectArtists();
 include "view-artists.php";
 include "view-footer.php";
 ?>
