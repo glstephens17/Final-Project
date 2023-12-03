@@ -1,4 +1,3 @@
-<h1>Kids</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
