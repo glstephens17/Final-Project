@@ -29,7 +29,7 @@
           <a class="nav-link" href="artists.php">Top 10 Artists</a>
         </li> 
          <li class="nav-item">
-          <a class="nav-link" href="playlists.php">Playlists You May Like</a>
+          <a class="nav-link" href="playlist.php">Playlists You May Like</a>
         </li> 
       </ul>
     </div>
