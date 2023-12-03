@@ -18,7 +18,7 @@
      <td><?php echo $artist['Years_Active']; ?></td>
      <td><?php echo $artist['Stage_Name']; ?></td>
      <td><?php echo $artist['Genre']; ?></td>
-     <td><a href="parents-pets.php?id=<?php echo $parent['parent_id']; ?>"</a><td>
+     <td><a href="#"</a><td>
    </tr>
  <?php  
  }
