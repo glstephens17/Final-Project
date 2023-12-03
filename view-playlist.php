@@ -5,7 +5,7 @@
  while ($playlist = $playlists->fetch_assoc()) {
  ?>
 <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src=<?php echo $playlist['image']; ?> class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">  <?php echo $playlist['Playlist_Title']; ?></h5>
     <p class="card-text">There are <?php echo $playlist['No_of_Songs']; ?> songs in this playlist. This is one of the best playlists created by ...</p>
