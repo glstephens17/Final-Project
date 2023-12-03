@@ -1,31 +1,22 @@
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-      <th>Playlist Id</th>
-      <th>Name</th>
-      <th>No of Songs</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
+
+
+
  <?php
  while ($playlist = $playlists->fetch_assoc()) {
  ?>
-   <tr>
-     <td><?php echo $playlist['Playlist_Id']; ?></td>
-     <td><?php echo $playlist['Playlist_Title']; ?></td>
-     <td><?php echo $playlist['No_of_Songs']; ?></td>
-     <td>
-  <form method="post" action="pets-by-kids.php">
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">  <?php echo $playlist['Playlist_Title']; ?></h5>
+    <p class="card-text">There are <?php echo $playlist['No_of_Songs']; ?> songs in this playlist. This is one of the best playlists created by ...</p>
+    <form method="post" action="pets-by-kids.php">
     <input type="hidden" name="kid" value="<?php echo $playlist['Playlist_Id'];?>"/>
     <button type="submit" class="btn btn-primary">Songs</button>
   </form>
-     </td>     
-   </tr>
+  </div>
+</div>
+   
  <?php  
  }
  ?>      
-    </tbody>
-  </table>
-</div>
+
