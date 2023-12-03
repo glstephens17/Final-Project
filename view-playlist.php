@@ -9,8 +9,8 @@
   <div class="card-body">
     <h5 class="card-title">  <?php echo $playlist['Playlist_Title']; ?></h5>
     <p class="card-text">There are <?php echo $playlist['No_of_Songs']; ?> songs in this playlist. This is one of the best playlists created by ...</p>
-    <form method="post" action="pets-by-kids.php">
-    <input type="hidden" name="kid" value="<?php echo $playlist['Playlist_Id'];?>"/>
+    <form method="post" action="songs-by-album.php">
+    <input type="hidden" name="pid" value="<?php echo $playlist['Playlist_Id'];?>"/>
     <button type="submit" class="btn btn-primary">Songs</button>
   </form>
   </div>
