@@ -5,6 +5,7 @@
  while ($playlist = $playlists->fetch_assoc()) {
  ?>
 <div class="card" style="width: 18rem;">
+  <!--https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-DUTYkQNArXwRI7DchM0c6bpy987Oedwb8cjY-PECA&s-->
   <img src=<?php echo $playlist['image']; ?> class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">  <?php echo $playlist['Playlist_Title']; ?></h5>
