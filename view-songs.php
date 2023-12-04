@@ -17,6 +17,7 @@
      <td><?php echo $song['Song_Title']; ?></td>
      <td><?php echo $song['Album_Title']; ?></td>
      <td><?php echo $song['Artist_Name']; ?></td>
+     <td><?php echo $song['Stage_Name']; ?></td>
      <td><?php echo $song['Duration']; ?></td>
      <td><a href="parents-pets.php?id=<?php echo $parent['parent_id']; ?>"</a><td>
    </tr>
