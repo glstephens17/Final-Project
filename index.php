@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "GabSpotify";
+$pageTitle = "GabsMusic";
 include 'view-header.php';
 ?>
     <h1>Welcome to Gab's Playlists!</h1>
