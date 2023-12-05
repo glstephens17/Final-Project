@@ -25,4 +25,17 @@ function insertArtist($aName, $yearActive, $stageName, $genre) {
         throw $e;
     }
 }
+function updateArtist($aName, $yearActive, $stageName, $genre, $aid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE `Artist` set `Artist_Name` = ?, `Years_Active` = ?, `Stage_Name` = ?, `Genre` = ? WHERE `artist_id` = ?");
+        $stmt->bind_param("sissi",$aName, $yearActive, $stageName, $genre, $aid);
+        $success = $stmt->execute();
+            $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
