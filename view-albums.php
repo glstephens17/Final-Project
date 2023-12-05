@@ -1,4 +1,7 @@
 <h1>Gabs Albums</h1>
+<?php
+include "view-albums-newform.php";
+?>
 <div class="table-responsive">
   <table class="table">
     <thead>
