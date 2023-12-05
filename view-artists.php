@@ -1,4 +1,7 @@
 <h1>Artists</h1>
+<?php
+include "view-artists-newform.php";
+?>
 <div class="table-responsive">
   <table class="table">
     <thead>
