@@ -21,12 +21,7 @@ include "view-artists-newform.php";
      <td><?php echo $artist['Years_Active']; ?></td>
      <td><?php echo $artist['Stage_Name']; ?></td>
      <td><?php echo $artist['Genre']; ?></td>
-      <form method="post" action="">
-    <input type="hidden" name="aid" value="<?php echo $artist['artist_id'];?>"/>
-    <button type="submit" class="btn btn-primary">Pets</button>
-  </form>
-     </td>
-      <td>
+     <td>
           <?php
     include "view-artist-editform.php";
     ?></td>
