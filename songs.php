@@ -11,7 +11,7 @@ include "view-header.php";
           echo '<div class="alert alert-success" role="alert">Added a new Song successfully!</div>';
         }
         else{
-          echo '<div class="alert alert-danger" role="alert">There was an error adding the artist</div>';
+          echo '<div class="alert alert-danger" role="alert">There was an error adding the Song</div>';
         }
         break;
     case "Edit":
