@@ -7,8 +7,8 @@ include "view-header.php";
  if(isset($_POST['actionType'])){
   switch($_POST['actionType']){
     case "Add":
-        if(insertArtist($_POST['aName'],$_POST['yearActive'],$_POST['stageName'], $_POST['genre'] )){
-          echo '<div class="alert alert-success" role="alert">Added a new artist successfully!</div>';
+        if(insertSong($_POST['sName'],$_POST['aid'],$_POST['alid'], $_POST['duration'] )){
+          echo '<div class="alert alert-success" role="alert">Added a new Song successfully!</div>';
         }
         else{
           echo '<div class="alert alert-danger" role="alert">There was an error adding the artist</div>';
