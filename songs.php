@@ -4,6 +4,37 @@ require_once("model-songs.php");
 
 $pageTitle = "Trending Songs";
 include "view-header.php";
+ if(isset($_POST['actionType'])){
+  switch($_POST['actionType']){
+    case "Add":
+        if(insertArtist($_POST['aName'],$_POST['yearActive'],$_POST['stageName'], $_POST['genre'] )){
+          echo '<div class="alert alert-success" role="alert">Added a new artist successfully!</div>';
+        }
+        else{
+          echo '<div class="alert alert-danger" role="alert">There was an error adding the artist</div>';
+        }
+        break;
+    case "Edit":
+           if(updateArtist($_POST['aName'],$_POST['yearActive'],$_POST['stageName'], $_POST['genre'], $_POST['aid']))
+               {
+          echo '<div class="alert alert-success" role="alert"> Artist successfully edited!</div>';
+          }
+          else
+          {
+          echo '<div class="alert alert-danger" role="alert"> Error</div>';
+          }
+          break;
+    case "Delete":
+        if (deleteSong($_POST['sid']))
+        {
+        echo '<div class="alert alert-success" role="alert">Song successfully deleted!</div>';
+        }
+        else {
+        echo '<div class="alert alert-danger" role="alert"> Error</div>';
+        }
+  }
+}
+
 $songs = selectSongs();
 include "view-songs.php";
 include "view-footer.php";
