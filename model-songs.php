@@ -12,11 +12,11 @@ function selectSongs() {
         throw $e;
     }
 }
-function insertSong($aName, $yearActive, $stageName, $genre) {
+function insertSong($sName, $aid, $alId, $duration) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `Song` (`Artist_Name`, `Years_Active`, `Stage_Name`, `Genre`) VALUES (?, ?, ?, ?);");
-        $stmt->bind_param("siss", $aName, $yearActive, $stageName, $genre);
+        $stmt = $conn->prepare("INSERT INTO `Song` (`Song_Title`, `Artist_Id`, `Album_Id`, `Duration`) VALUES (?, ?, ?, ?);");
+        $stmt->bind_param("siid", $sName, $aid, $alId, $duration);
         $success = $stmt->execute();
             $conn->close();
         return $success;
