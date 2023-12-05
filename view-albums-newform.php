@@ -10,28 +10,20 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="albumModalLabel">New album</h1>
+        <h1 class="modal-title fs-5" id="albumModalLabel">New Album</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form method="post" action="">
   <div class="mb-3">
-    <label for="aName" class="form-label">album Name</label>
-    <input type="text" class="form-control" id="aName" name="aName">
+    <label for="alTitle" class="form-label">Album Title</label>
+    <input type="text" class="form-control" id="alTitle" name="alTitle">
       </div>
-  <div class="mb-3">
-    <label for="stageName" class="form-label">Album Stage Name</label>
-    <input type="text" class="form-control" id="stageName" name="stageName">
-  </div>
       <div class="mb-3">
-    <label for="genre" class="form-label">Genre</label>
-    <input type="text" class="form-control" id="genre" name="genre">
+    <label for="noofsongs" class="form-label">No of Songs</label>
+    <input type="text" class="form-control" id="noofsongs" name="noofsongs">
   </div>
-      <div class="mb-3">
-    <label for="yearActive" class="form-label">Years Active</label>
-    <input type="text" class="form-control" id="yearActive" name="yearActive">
-  </div>
-          <input type="hidden" name="actionType" value="Add">
+              <input type="hidden" name="actionType" value="Add">
    <button type="submit" class="btn btn-primary">Add</button>
 </form>
           </div>
