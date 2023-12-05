@@ -9,7 +9,7 @@ include "view-song-newform.php";
       <th>Title</th>
       <th>Album</th>
       <th>Artist</th>
-              <th>Stage Name</th>
+      <th>Stage Name</th>
         <th>Duration</th>
         <th></th>
       </tr>
@@ -26,6 +26,10 @@ include "view-song-newform.php";
      <td><?php echo $song['Duration']; ?></td>
      <td>
       <td>
+        <?php
+    include "view-artist-editform.php";
+    ?></td>
+   <td>
   <form method="post" action="">
     <input type="hidden" name="sid" value="<?php echo $song['Song_Id']; ?>">
     <input type="hidden" name="actionType" value="Delete">
