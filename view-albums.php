@@ -1,4 +1,4 @@
-<h1>Trending Top 10 Albums</h1>
+<h1>Trending Albums</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
