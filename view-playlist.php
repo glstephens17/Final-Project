@@ -4,8 +4,6 @@
  <?php
  while ($playlist = $playlists->fetch_assoc()) {
  ?>
-  <div class="card-container">
-  <?php while ($playlist = $playlists->fetch_assoc()) { ?>
     <div class="card" style="width: 18rem;">
 <div class="card" style="width: 18rem;">
   <!--https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-DUTYkQNArXwRI7DchM0c6bpy987Oedwb8cjY-PECA&s-->
@@ -23,9 +21,7 @@
  <?php  
  }
  ?>   
-  </div>
-  <?php } ?>
-</div>
+ 
 
 
    
