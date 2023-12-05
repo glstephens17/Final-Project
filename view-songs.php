@@ -1,4 +1,7 @@
 <h1>Songs</h1>
+<?php
+include "view-song-newform.php";
+?>
 <div class="table-responsive">
   <table class="table">
     <thead>
