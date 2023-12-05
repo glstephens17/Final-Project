@@ -31,7 +31,7 @@
     <input type="text" class="form-control" id="yearActive" name="yearActive" value="<?php echo $artist['Years_Active'];?>">
   </div>
            <input type="hidden" name="aid" value="<?php echo $artist['Artist_Id'];?>">
-          <input type="hidden" name="actionType" value="Add">
+          <input type="hidden" name="actionType" value="Edit">
       <button type="submit" class="btn btn-primary">Add</button>
 </form>
           </div>
