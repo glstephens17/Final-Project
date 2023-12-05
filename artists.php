@@ -25,9 +25,9 @@ include "view-header.php";
           }
           break;
     case "Delete":
-        if (deleteKid($_POST['kId']))
+        if (deleteArtist($_POST['aid']))
         {
-        echo '<div class="alert alert-success" role="alert"> Kid successfully deleted!</div>';
+        echo '<div class="alert alert-success" role="alert"> Artist successfully deleted!</div>';
         }
         else {
         echo '<div class="alert alert-danger" role="alert"> Error</div>';
