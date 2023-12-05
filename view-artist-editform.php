@@ -14,7 +14,24 @@
       </div>
       <div class="modal-body">
         <form method="post" action="">
-    <div class="mb-3">
+         <div class="mb-3">
+    <label for="aName" class="form-label">Artist Name</label>
+    <input type="text" class="form-control" id="aName" name="aName">
+      </div>
+  <div class="mb-3">
+    <label for="stageName" class="form-label">Artist Stage Name</label>
+    <input type="text" class="form-control" id="stageName" name="stageName">
+  </div>
+      <div class="mb-3">
+    <label for="genre" class="form-label">Genre</label>
+    <input type="text" class="form-control" id="genre" name="genre">
+  </div>
+      <div class="mb-3">
+    <label for="yearActive" class="form-label">Years Active</label>
+    <input type="text" class="form-control" id="yearActive" name="yearActive">
+  </div>
+           <input type="hidden" name="aid" value="<?php echo $artist['artist_id'];?>">
+          <input type="hidden" name="actionType" value="Add">
       <button type="submit" class="btn btn-primary">Add</button>
 </form>
           </div>
