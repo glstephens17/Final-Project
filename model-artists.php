@@ -41,7 +41,7 @@ function updateArtist($aName, $yearActive, $stageName, $genre, $aid) {
 function deleteArtist($aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("DELETE FROM `artist` WHERE `artist_id` = ?");
+        $stmt = $conn->prepare("DELETE FROM `Artist` WHERE `Artist_Id` = ?");
         $stmt->bind_param("i", $aid);
         $success = $stmt->execute();
             $conn->close();
