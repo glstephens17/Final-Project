@@ -38,11 +38,11 @@ function updateArtist($aName, $yearActive, $stageName, $genre, $aid) {
         throw $e;
     }
 }
-function deleteArtist(aid) {
+function deleteArtist($aid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM `artist` WHERE `artist_id` = ?");
-        $stmt->bind_param("i", aid);
+        $stmt->bind_param("i", $aid);
         $success = $stmt->execute();
             $conn->close();
         return $success;
