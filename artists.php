@@ -17,7 +17,7 @@ include "view-header.php";
     case "Edit":
            if(updateArtist($_POST['aName'],$_POST['yearActive'],$_POST['stageName'], $_POST['genre'], $_POST['aid']))
                {
-          echo '<div class="alert alert-success" role="alert"> Kid successfully edited!</div>';
+          echo '<div class="alert alert-success" role="alert"> Artist successfully edited!</div>';
           }
           else
           {
