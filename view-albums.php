@@ -1,4 +1,4 @@
-<h1>Trending Albums</h1>
+<h1>Gabs Albums</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
