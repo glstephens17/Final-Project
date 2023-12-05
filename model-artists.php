@@ -15,7 +15,7 @@ function selectArtists() {
 function insertArtist($aName, $yearActive, $stageName, $genre) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `Artist` (`Artist_Id`, `Artist_Name`, `Years_Active`, `Stage_Name`, `Genre`) VALUES (?, ?, ?, ?, ?);");
+        $stmt = $conn->prepare("INSERT INTO `Artist` (`Artist_Name`, `Years_Active`, `Stage_Name`, `Genre`) VALUES (?, ?, ?, ?);");
         $stmt->bind_param("siss", $aName, $yearActive, $stageName, $genre);
         $success = $stmt->execute();
             $conn->close();
