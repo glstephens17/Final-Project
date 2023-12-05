@@ -15,7 +15,11 @@
       </div>
       <div class="modal-body">
         <form method="post" action="">
-  <div class="mb-3">
+   <div class="mb-3">
+    <label for="stageName" class="form-label">Artist Stage Name</label>
+    <input type="text" class="form-control" id="stageName" name="stageName">
+  </div>
+    <div class="mb-3">
     <label for="alTitle" class="form-label">Album Title</label>
     <input type="text" class="form-control" id="alTitle" name="alTitle">
       </div>
