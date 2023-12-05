@@ -25,11 +25,11 @@ function insertSong($sName, $aid, $alId, $duration) {
         throw $e;
     }
 }
-function updatSong($aName, $yearActive, $stageName, $genre, $aid) {
+function updateSong($sName, $aid, $alId, $duration) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `Song` set `Artist_Name` = ?, `Years_Active` = ?, `Stage_Name` = ?, `Genre` = ? WHERE `artist_id` = ?");
-        $stmt->bind_param("sissi",$aName, $yearActive, $stageName, $genre, $aid);
+        $stmt = $conn->prepare("UPDATE `Song` set `Song_Title` = ?, `Artist_Id` = ?, `Album_Id` = ?, `Duration` = ? WHERE `Song_Id` = ?");
+        $stmt->bind_param("siid", $sName, $aid, $alId, $duration);
         $success = $stmt->execute();
             $conn->close();
         return $success;
