@@ -16,19 +16,19 @@
         <form method="post" action="">
          <div class="mb-3">
     <label for="aName" class="form-label">Artist Name</label>
-    <input type="text" class="form-control" id="aName" name="aName">
+    <input type="text" class="form-control" id="aName" name="aName" value="<?php echo $artist['artist_name'];?>">
       </div>
   <div class="mb-3">
     <label for="stageName" class="form-label">Artist Stage Name</label>
-    <input type="text" class="form-control" id="stageName" name="stageName">
+    <input type="text" class="form-control" id="stageName" name="stageName" value="<?php echo $artist['stage_name'];?>">
   </div>
       <div class="mb-3">
     <label for="genre" class="form-label">Genre</label>
-    <input type="text" class="form-control" id="genre" name="genre">
+    <input type="text" class="form-control" id="genre" name="genre" value="<?php echo $artist['genre'];?>">
   </div>
       <div class="mb-3">
     <label for="yearActive" class="form-label">Years Active</label>
-    <input type="text" class="form-control" id="yearActive" name="yearActive">
+    <input type="text" class="form-control" id="yearActive" name="yearActive" value="<?php echo $artist['years_active'];?>">
   </div>
            <input type="hidden" name="aid" value="<?php echo $artist['Artist_Id'];?>">
           <input type="hidden" name="actionType" value="Add">
