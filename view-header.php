@@ -20,13 +20,13 @@
           <a class="nav-link active" aria-current="page" href="/">Playlists</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="songs.php">Top 10 Songs</a>
+          <a class="nav-link" href="songs.php">Songs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="albums.php">Trending Albums</a>
+          <a class="nav-link" href="albums.php">Albums</a>
         </li> 
         <li class="nav-item">
-          <a class="nav-link" href="artists.php">Top 10 Artists</a>
+          <a class="nav-link" href="artists.php">Artists</a>
         </li> 
        </ul>
     </div>
