@@ -23,8 +23,8 @@
     <input type="text" class="form-control" id="stageName" name="stageName" value="<?php echo $artist['Stage_Name'];?>">
   </div>
       <div class="mb-3">
-    <label for="Genre" class="form-label">Genre</label>
-    <input type="text" class="form-control" id="Genre" name="Genre" value="<?php echo $artist['Genre'];?>">
+    <label for="genre" class="form-label">Genre</label>
+    <input type="text" class="form-control" id="genre" name="genre" value="<?php echo $artist['Genre'];?>">
   </div>
       <div class="mb-3">
     <label for="yearActive" class="form-label">Years Active</label>
