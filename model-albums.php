@@ -15,7 +15,7 @@ function selectAlbums() {
 function insertAlbum($aName, $yearActive, $stageName, $genre) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `Album` (`Album_Name`, `Years_Active`, `Stage_Name`, `Genre`) VALUES (?, ?, ?, ?);");
+        $stmt = $conn->prepare("INSERT INTO `Album` (`Album_Title`, `No_of_Songs`, ``, `Genre`) VALUES (?, ?, ?, ?);");
         $stmt->bind_param("siss", $aName, $yearActive, $stageName, $genre);
         $success = $stmt->execute();
             $conn->close();
