@@ -17,7 +17,7 @@
         <form method="post" action="">
    <div class="mb-3">
     <label for="aId" class="form-label">Artist Stage Name</label>
-    <input type="text" class="form-control" id="aId" name="aId">
+    <input type="number" class="form-control" id="aId" name="aId">
   </div>
     <div class="mb-3">
     <label for="aTitle" class="form-label">Album Title</label>
@@ -25,7 +25,7 @@
       </div>
       <div class="mb-3">
     <label for="noOfSongs" class="form-label">No of Songs</label>
-    <input type="text" class="form-control" id="noOfSongs" name="noOfSongs">
+    <input type="number" class="form-control" id="noOfSongs" name="noOfSongs">
       </div>
               <input type="hidden" name="actionType" value="Add">
    <button type="submit" class="btn btn-primary">Add</button>
