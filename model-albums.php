@@ -2,7 +2,7 @@
 function selectAlbums() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT a.Artist_Name, al.Album_Title, al.Album_Id, No_of_Songs FROM `Album` al JOIN Artist a ON al.Artist_Id = a.Artist_Id LIMIT 10;");
+        $stmt = $conn->prepare("SELECT a.Stage_Name, al.Album_Title, al.Album_Id, No_of_Songs FROM `Album` al JOIN Artist a ON al.Artist_Id = a.Artist_Id LIMIT 10;");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
