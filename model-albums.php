@@ -12,11 +12,11 @@ function selectAlbums() {
         throw $e;
     }
 }
-function insertAlbum($aName, $yearActive, $stageName, $genre) {
+function insertAlbums($aTitle, $aId, $yearActive, $genre) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `Album` (`Album_Title`, `No_of_Songs`, ``, `Genre`) VALUES (?, ?, ?, ?);");
-        $stmt->bind_param("siss", $aName, $yearActive, $stageName, $genre);
+        $stmt = $conn->prepare("INSERT INTO `Album` (`Album_Title`, `Arist_Id`, `No_of_Songs`, `Genre`) VALUES (?, ?, ?, ?);");
+        $stmt->bind_param("siis", $aTitle, $aId, $yearActive, $genre);
         $success = $stmt->execute();
             $conn->close();
         return $success;
