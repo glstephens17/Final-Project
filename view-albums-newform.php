@@ -26,10 +26,6 @@
       <div class="mb-3">
     <label for="noOfSongs" class="form-label">No of Songs</label>
     <input type="text" class="form-control" id="noOfSongs" name="noOfSongs">
-  </div>
-           <div class="mb-3">
-    <label for="genre" class="form-label">Genre</label>
-    <input type="text" class="form-control" id="genre" name="genre">
       </div>
               <input type="hidden" name="actionType" value="Add">
    <button type="submit" class="btn btn-primary">Add</button>
