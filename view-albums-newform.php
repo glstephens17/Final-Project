@@ -16,17 +16,21 @@
       <div class="modal-body">
         <form method="post" action="">
    <div class="mb-3">
-    <label for="stageName" class="form-label">Artist Stage Name</label>
-    <input type="text" class="form-control" id="stageName" name="stageName">
+    <label for="aId" class="form-label">Artist Stage Name</label>
+    <input type="text" class="form-control" id="aId" name="aId">
   </div>
     <div class="mb-3">
-    <label for="alTitle" class="form-label">Album Title</label>
-    <input type="text" class="form-control" id="alTitle" name="alTitle">
+    <label for="aTitle" class="form-label">Album Title</label>
+    <input type="text" class="form-control" id="aTitle" name="aTitle">
       </div>
       <div class="mb-3">
-    <label for="noofsongs" class="form-label">No of Songs</label>
-    <input type="text" class="form-control" id="noofsongs" name="noofsongs">
+    <label for="noOfSongs" class="form-label">No of Songs</label>
+    <input type="text" class="form-control" id="noOfSongs" name="noOfSongs">
   </div>
+           <div class="mb-3">
+    <label for="genre" class="form-label">Genre</label>
+    <input type="text" class="form-control" id="genre" name="genre">
+      </div>
               <input type="hidden" name="actionType" value="Add">
    <button type="submit" class="btn btn-primary">Add</button>
 </form>
