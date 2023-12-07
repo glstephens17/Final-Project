@@ -8,7 +8,7 @@ if(isset($_POST['actionType'])){
   switch($_POST['actionType']){
     case "Add":
         if(insertAlbums($_POST['$aTitle'],$_POST['$aId'],$_POST['noOfSongs'], $_POST['$genre'] )){          
-          echo '<div class="alert alert-success" role="alert">Added a new artist successfully!</div>';
+          echo '<div class="alert alert-success" role="alert">Added a new album successfully!</div>';
         }
         else{
           echo '<div class="alert alert-danger" role="alert">There was an error adding the Album</div>';
