@@ -12,19 +12,6 @@ function selectAlbums() {
         throw $e;
     }
 }
-function insertAlbums2($aTitle, $aId, $noOfSongs, $genre) {
-    try {
-        $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `Album` (`Album_Title`, `Arist_Id`, `No_of_Songs`, `Genre`) VALUES (?, ?, ?, ?);");
-        $stmt->bind_param("siis", $aTitle, $aId, $noOfSongs, $genre);
-        $success = $stmt->execute();
-            $conn->close();
-        return $success;
-    } catch (Exception $e) {
-        $conn->close();
-        throw $e;
-    }
-}
 function insertAlbums($aTitle, $aId, $noOfSongs,) {
     try {
         $conn = get_db_connection();
