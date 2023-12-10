@@ -56,8 +56,7 @@ function deleteAlbum($aid) {
 function selectArtistsForInput() {
 try {
 $conn = get_db_connection();
-$stmt = $conn->prepare("SELECT artist_id, stage_name FROM `artist` order by
-stage_name");
+$stmt = $conn->prepare("SELECT Artist_id, stage_name FROM `Artist` order by stage_name;");
 $stmt->execute();
 $result = $stmt->get_result();
 $conn->close();
