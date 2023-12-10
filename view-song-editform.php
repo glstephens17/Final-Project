@@ -25,7 +25,7 @@ $selectedArtist = $song['Artist_Id'];
 include "view-artist-input-list.php"; ?>
   </div>
                                   <div class="mb-3">
-    <label for="aId<?php echo $song['Song_Id'];?>" class="form-label">Artist</label>
+    <label for="aId<?php echo $song['Song_Id'];?>" class="form-label">Album</label>
 <?php $albumList=selectAlbumsForInput();
 $selectedAlbum = $song['Album_Id'];
 include "view-album-input-list.php"; ?>
