@@ -16,7 +16,7 @@
       <div class="modal-body">
         <form method="post" action="">
   <div class="mb-3">
-    <label for="aName" class="form-label">artist Name</label>
+    <label for="aName" class="form-label">Artist Name</label>
     <input type="text" class="form-control" id="aName" name="aName">
       </div>
   <div class="mb-3">
