@@ -25,10 +25,12 @@
 $selectedArtist = 0;
 include "view-artist-input-list.php"; ?>
 </div>
-      <div class="mb-3">
-    <label for="alId" class="form-label">Album</label>
-    <input type="text" class="form-control" id="alId" name="alId">
-  </div>
+     <div class="mb-3">
+<label for="aId" class="form-label">Album</label>
+<?php $albumList=selectAlbumsForInput();
+$selectedAlbum = 0;
+include "view-album-input-list.php"; ?>
+</div>
       <div class="mb-3">
     <label for="duration" class="form-label">Duration</label>
     <input type="text" class="form-control" id="duration" name="duration">
