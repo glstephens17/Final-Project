@@ -5,6 +5,7 @@
     <thead>
       <tr>
       <th>Title</th>
+      <th>Stage Name</th>
       <th>Playlist</th>
       <th>Created On</th>
         <th>Updated At</th>
@@ -16,6 +17,7 @@
  ?>
    <tr>
      <td><?php echo $song['Song_Title']; ?></td>
+     <td><?php echo $song['Stage_Name']; ?></td>
      <td><?php echo $song['Playlist_Title']; ?></td>
      <td><?php echo $song['Created_At']; ?></td>
      <td><?php echo $song['Updated_At']; ?></td>
