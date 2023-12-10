@@ -19,8 +19,8 @@
     <input type="text" class="form-control" id="sName" name="sName" value="<?php echo $song['Song_Title'];?>">
       </div>
   <div class="mb-3">
-    <label for="stageName" class="form-label">Artist Stage Name</label>
-    <input type="text" class="form-control" id="stageName" name="stageName" value="<?php echo $song['Stage_Name'];?>">
+    <label for="aid" class="form-label">Artist Stage Name</label>
+    <input type="text" class="form-control" id="aid" name="aid" value="<?php echo $song['Stage_Name'];?>">
   </div>
       <div class="mb-3">
     <label for="alId" class="form-label">Album</label>
@@ -30,7 +30,7 @@
     <label for="duration" class="form-label">Duration</label>
     <input type="text" class="form-control" id="duration" name="duration" value="<?php echo $song['Duration'];?>">
   </div>
-           <input type="hidden" name="aid" value="<?php echo $song['Song_Id'];?>">
+           <input type="hidden" name="sId" value="<?php echo $song['Song_Id'];?>">
           <input type="hidden" name="actionType" value="Edit">
       <button type="submit" class="btn btn-primary">Add</button>
 </form>
