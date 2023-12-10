@@ -8,8 +8,7 @@ include "view-song-newform.php";
       <tr>
       <th>Title</th>
       <th>Album</th>
-      <th>Artist</th>
-      <th>Stage Name</th>
+       <th>Stage Name</th>
         <th>Duration</th>
         <th></th>
       </tr>
@@ -21,7 +20,6 @@ include "view-song-newform.php";
    <tr>
      <td><?php echo $song['Song_Title']; ?></td>
      <td><?php echo $song['Album_Title']; ?></td>
-     <td><?php echo $song['Artist_Name']; ?></td>
      <td><?php echo $song['Stage_Name']; ?></td>
      <td><?php echo $song['Duration']; ?></td>
      <td>
