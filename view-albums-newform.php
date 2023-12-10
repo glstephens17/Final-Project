@@ -15,16 +15,12 @@
       </div>
       <div class="modal-body">
         <form method="post" action="">
-   <div class="mb-3">
-    <label for="aId" class="form-label">Artist Id</label>
-    <input type="number" class="form-control" id="aId" name="aId">
-  </div>
-      <div class="mb-3">
-    <label for="aId" class="form-label">Artist</label>
-   <?php $artistList=selectArtistsForInput();
-$selectedArtist = $kid['parent_id'];
- <input type="text" class="form-control" id="aId" name="aId">
-  </div>
+         <div class="mb-3">
+<label for="aId" class="form-label">Artist</label>
+<?php $artistList=selectArtistsForInput();
+$selectedArtist = 0;
+include "view-artist-input-list.php"; ?>
+</div>
     <div class="mb-3">
     <label for="aTitle" class="form-label">Album Title</label>
     <input type="text" class="form-control" id="aTitle" name="aTitle">
