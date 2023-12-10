@@ -64,4 +64,18 @@ $conn->close();
 throw $e;
 }
 }
+
+function selectAlbumsForInput() {
+try {
+$conn = get_db_connection();
+$stmt = $conn->prepare("SELECT Album_Id, Album_Title FROM `Album` order by Album_Title;");
+$stmt->execute();
+$result = $stmt->get_result();
+$conn->close();
+return $result;
+} catch (Exception $e) {
+$conn->close();
+throw $e;
+}
+}
 ?>
