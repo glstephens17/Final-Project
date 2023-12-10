@@ -54,7 +54,7 @@ function deleteSong($sid) {
 function selectArtistsForInput() {
 try {
 $conn = get_db_connection();
-$stmt = $conn->prepare("SELECT Artist_id, stage_name FROM `Artist` order by stage_name;");
+$stmt = $conn->prepare("SELECT Artist_Id, stage_name FROM `Artist` order by stage_name;");
 $stmt->execute();
 $result = $stmt->get_result();
 $conn->close();
