@@ -16,7 +16,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php"><img src="https://www.globalsign.com/application/files/2515/4173/3280/fake-spotify-emails-are-targeting-apple-id-passwords.jpg"></a>
+        <a class="navbar-brand" href="playlist.php">Gab's Spotify</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
