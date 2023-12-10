@@ -18,14 +18,18 @@
     <label for="sName" class="form-label">Song Name</label>
     <input type="text" class="form-control" id="sName" name="sName" value="<?php echo $song['Song_Title'];?>">
       </div>
-  <div class="mb-3">
-    <label for="aid" class="form-label">Artist Stage Name</label>
-    <input type="text" class="form-control" id="aid" name="aid" value="<?php echo $song['Stage_Name'];?>">
+                  <div class="mb-3">
+    <label for="aId<?php echo $song['Song_Id'];?>" class="form-label">Artist</label>
+<?php $artistList=selectArtistsForInput();
+$selectedArtist = $song['Artist_Id'];
+include "view-artist-input-list.php"; ?>
   </div>
-      <div class="mb-3">
-    <label for="alId" class="form-label">Album</label>
-    <input type="text" class="form-control" id="alId" name="alId" value="<?php echo $song['Album_Title'];?>">
-  </div>
+                                  <div class="mb-3">
+    <label for="aId<?php echo $song['Song_Id'];?>" class="form-label">Artist</label>
+<?php $albumList=selectAlbumsForInput();
+$selectedAlbum = $song['Album_Id'];
+include "view-album-input-list.php"; ?>
+  </div>                
       <div class="mb-3">
     <label for="duration" class="form-label">Duration</label>
     <input type="text" class="form-control" id="duration" name="duration" value="<?php echo $song['Duration'];?>">
