@@ -19,7 +19,11 @@ include "view-albums-newform.php";
      <td><?php echo $album['Album_Title']; ?></td>
        <td><?php echo $album['Stage_Name']; ?></td>
      <td><?php echo $album['No_of_Songs']; ?></td>
-     <td><a href="#">songs</a><td>
+     <td> <form method="post" action="songs-by-album.php">
+
+  <input type="hidden" name="alId" value="<?php echo $album['Album_Id']; ?>"/>
+            <button type="submit" class="btn btn-primary">Songs</button>
+          </form><td>
    </tr>
  <?php  
  }
