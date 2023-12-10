@@ -23,8 +23,8 @@
     <input type="text" class="form-control" id="stageName" name="stageName" value="<?php echo $song['Stage_Name'];?>">
   </div>
       <div class="mb-3">
-    <label for="genre" class="form-label">Genre</label>
-    <input type="text" class="form-control" id="genre" name="genre" value="<?php echo $song['Genre'];?>">
+    <label for="alId" class="form-label">Album</label>
+    <input type="text" class="form-control" id="alId" name="alId" value="<?php echo $song['Album_Title'];?>">
   </div>
       <div class="mb-3">
     <label for="duration" class="form-label">Duration</label>
