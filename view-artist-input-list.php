@@ -6,7 +6,7 @@ if($selectedArtist==$artistItem['artist_id'])
 $selText=" selected";
 }
 ?>
-<option value="<?php echo $artistItem['artist_id'];?>"<?=$selText?>><?php echo
+<option value="<?php echo $artistItem['Artist_id'];?>"<?=$selText?>><?php echo
 $artistItem['stage_name']; ?></option>
 <?php } ?>
 </select>
