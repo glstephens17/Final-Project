@@ -14,22 +14,22 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form method="post" action="">
+ <form method="post" action="">
   <div class="mb-3">
     <label for="sName" class="form-label">Song Name</label>
     <input type="text" class="form-control" id="sName" name="sName">
       </div>
   <div class="mb-3">
-    <label for="stageName" class="form-label">Song Stage Name</label>
-    <input type="text" class="form-control" id="stageName" name="stageName">
+    <label for="aid" class="form-label">Artist Name</label>
+    <input type="text" class="form-control" id="aid" name="aid">
   </div>
       <div class="mb-3">
-    <label for="genre" class="form-label">Genre</label>
-    <input type="text" class="form-control" id="genre" name="genre">
+    <label for="alId" class="form-label">Album</label>
+    <input type="text" class="form-control" id="alId" name="alId">
   </div>
       <div class="mb-3">
-    <label for="yearActive" class="form-label">Duration</label>
-    <input type="text" class="form-control" id="yearActive" name="yearActive">
+    <label for="duration" class="form-label">Duration</label>
+    <input type="text" class="form-control" id="duration" name="duration">
   </div>
           <input type="hidden" name="actionType" value="Add">
    <button type="submit" class="btn btn-primary">Add</button>
