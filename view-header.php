@@ -11,6 +11,7 @@
     height: 50vh;
 }
 </style>
+      <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="container">
