@@ -27,7 +27,7 @@ include "view-song-newform.php";
      <td>
       <td>
         <?php
-    include "view-artist-editform.php";
+    include "view-song-editform.php";
     ?></td>
    <td>
   <form method="post" action="">
