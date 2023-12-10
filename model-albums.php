@@ -52,4 +52,19 @@ function deleteAlbum($aid) {
         throw $e;
     }
 }
+}
+function selectArtistsForInput() {
+try {
+$conn = get_db_connection();
+$stmt = $conn->prepare("SELECT artist_id, stage_name FROM `artist` order by
+stage_name");
+$stmt->execute();
+$result = $stmt->get_result();
+$conn->close();
+return $result;
+} catch (Exception $e) {
+$conn->close();
+throw $e;
+}
+}
 ?>
