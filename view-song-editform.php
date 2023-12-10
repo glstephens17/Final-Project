@@ -15,11 +15,11 @@
       <div class="modal-body">
         <form method="post" action="">
          <div class="mb-3">
-    <label for="aName" class="form-label">Song Name</label>
-    <input type="text" class="form-control" id="aName" name="aName" value="<?php echo $song['Song_Name'];?>">
+    <label for="sName" class="form-label">Song Name</label>
+    <input type="text" class="form-control" id="sName" name="sName" value="<?php echo $song['Song_Name'];?>">
       </div>
   <div class="mb-3">
-    <label for="stageName" class="form-label">Song Stage Name</label>
+    <label for="stageName" class="form-label">Artist Stage Name</label>
     <input type="text" class="form-control" id="stageName" name="stageName" value="<?php echo $song['Stage_Name'];?>">
   </div>
       <div class="mb-3">
