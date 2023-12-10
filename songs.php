@@ -15,12 +15,12 @@ include "view-header.php";
         }
         break;
     case "Edit":
-           if(updateSong($_POST['sName'],$_POST['aid'],$_POST['alid'], $_POST['durantion'] )){
-             echo '<div class="alert alert-success" role="alert"> Somg successfully edited!</div>';
+           if(updateSong($_POST['sName'],$_POST['aid'],$_POST['alId'], $_POST['duration'],$_POST['sId'] )){
+             echo '<div class="alert alert-success" role="alert"> Song successfully edited!</div>';
           }
           else
           {
-          echo '<div class="alert alert-danger" role="alert"> Error</div>';
+          echo '<div class="alert alert-danger" role="alert"> Error editing Song</div>';
           }
           break;
     case "Delete":
