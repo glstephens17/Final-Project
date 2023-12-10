@@ -20,9 +20,11 @@
     <input type="text" class="form-control" id="sName" name="sName">
       </div>
   <div class="mb-3">
-    <label for="aid" class="form-label">Artist Name</label>
-    <input type="text" class="form-control" id="aid" name="aid">
-  </div>
+<label for="aId" class="form-label">Artist</label>
+<?php $artistList=selectArtistsForInput();
+$selectedArtist = 0;
+include "view-artist-input-list.php"; ?>
+</div>
       <div class="mb-3">
     <label for="alId" class="form-label">Album</label>
     <input type="text" class="form-control" id="alId" name="alId">
