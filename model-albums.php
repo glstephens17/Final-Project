@@ -52,7 +52,6 @@ function deleteAlbum($aid) {
         throw $e;
     }
 }
-}
 function selectArtistsForInput() {
 try {
 $conn = get_db_connection();
