@@ -24,6 +24,19 @@ include "view-song-newform.php";
      <td><?php echo $song['Duration']; ?></td>
      <td>
       <td>
+        <!-- view-songs.php -->
+<ul id="sortable-list">
+  <?php foreach ($songs as $song): ?>
+    <li><?php echo $song['Song_Title']; ?> - <?php echo $song['Artist_Name']; ?></li>
+  <?php endforeach; ?>
+</ul>
+
+<script>
+  $(function() {
+    $("#sortable-list").sortable();
+  });
+</script>
+
         <?php
     include "view-song-editform.php";
     ?></td>
