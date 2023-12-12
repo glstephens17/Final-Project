@@ -12,6 +12,10 @@
 }
 </style>
       <link rel="stylesheet" href="styles.css">
+    <!-- Add these in the head section of your HTML -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   </head>
   <body>
       <div class="container">
